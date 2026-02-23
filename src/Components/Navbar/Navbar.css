@@ -161,9 +161,9 @@
     }
     
     .logo-img {
-  height: 100px;
-  width: 120px;
-  padding: 10px 20px;
+  height: 110px;
+  width: 130px;
+  padding-left: -10px;
 }
 
     .nav-connect{
