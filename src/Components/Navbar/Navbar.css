@@ -158,8 +158,14 @@
 @media(max-width:768px){
     .navbar{
         margin: 25px 35px;
-        padding-right: 10px;
     }
+    
+    .navbar img {
+  height: 100px;
+  width: 120px;
+  padding-left: -10px;
+}
+
     .nav-connect{
         display: none;
     }
