@@ -77,7 +77,7 @@ const MyWork = () => {
       img: LMS,
       title: "LMS System",
       tech: "MERN Stack",
-      live: "#",
+      // live: "#",
       github: "https://github.com/vaishnavikolekar1516/LMS"
     },
     // {
