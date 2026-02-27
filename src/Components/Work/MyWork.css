@@ -189,6 +189,7 @@
 
 .work-container img{
   width: 100%;
+  max-width: 980px;
   height: auto;
 }
 
