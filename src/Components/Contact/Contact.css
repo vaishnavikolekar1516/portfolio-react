@@ -161,6 +161,12 @@
         align-items: center;
     }
 
+    .contact-title img{
+        width: 200px;
+        height: 60px;
+        right: -10px;
+    }
+
     .contact-left h1{
         font-size: 32px;
     }
