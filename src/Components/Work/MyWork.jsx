@@ -60,7 +60,7 @@ const MyWork = () => {
   const projects = [
     {
       img: Portfolio,
-      title: "Portfolio Website",
+      title: "My-Portfolio Website",
       tech: "React • CSS • Responsive",
       live: "https://portfolio-react-iota-seven-97.vercel.app/",
       github: "https://github.com/vaishnavikolekar1516/portfolio-react"
