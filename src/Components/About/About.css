@@ -155,6 +155,41 @@
 .skill-icon.mongo { color: #4db33d; }
 .skill-icon.express { color: white; }
 
+/* Desktop layout for About section (screens > 768px) */
+@media(min-width:769px){
+
+  /* Main section as grid: left image | right content */
+  .about-sections {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* left image, right content */
+    gap: 50px;
+    align-items: start;
+  }
+
+  .about-left {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* Skills arranged in two columns */
+  .about-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Frontend | Backend */
+    gap: 20px;
+  }
+
+  .about-skill {
+    flex: unset; /* allow grid to control width */
+  }
+}
+
 /* tablet */
 
 @media(max-width:1024px){
