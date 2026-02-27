@@ -55,7 +55,38 @@ import LMS_Dashboard from '../../assets/LMS_Dashboard.png'
 
 const MyWork = () => {
 
-  const [selectedImg, setSelectedImg] = useState(null);
+  const [selectedImg, setSelectedImg] = useState(null)
+
+  const projects = [
+    {
+      img: Portfolio,
+      title: "Portfolio Website",
+      tech: "React • CSS • Responsive",
+      live: "https://portfolio-react-iota-seven-97.vercel.app/",
+      github: "https://github.com/YOUR_GITHUB_LINK"
+    },
+    {
+      img: ToDo,
+      title: "To Do App",
+      tech: "React • LocalStorage",
+      live: "#",
+      github: "#"
+    },
+    {
+      img: LMS,
+      title: "LMS System",
+      tech: "MERN Stack",
+      live: "#",
+      github: "#"
+    },
+    {
+      img: LMS_Dashboard,
+      title: "LMS Dashboard",
+      tech: "React • Dashboard UI",
+      live: "#",
+      github: "#"
+    }
+  ]
 
   return (
     <div id='work' className='work'>
@@ -67,17 +98,43 @@ const MyWork = () => {
 
       <div className="work-container">
 
-        <img src={Portfolio} alt="Portfolio Project"
-        onClick={() => setSelectedImg(Portfolio)} />
+        {projects.map((project,index)=>(
+          <div className="project-card" key={index}>
 
-        <img src={ToDo} alt="To Do App"
-        onClick={() => setSelectedImg(ToDo)} />
+            <img
+              src={project.img}
+              alt={project.title}
+              onClick={() => setSelectedImg(project.img)}
+            />
 
-        <img src={LMS} alt="LMS Project"
-        onClick={() => setSelectedImg(LMS)} />
+            <h3>{project.title}</h3>
 
-        <img src={LMS_Dashboard} alt="LMS Dashboard"
-        onClick={() => setSelectedImg(LMS_Dashboard)} />
+            <p className="project-tech">
+              {project.tech}
+            </p>
+
+            <div className="project-buttons">
+
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Demo
+              </a>
+
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+        ))}
 
       </div>
 
@@ -85,8 +142,11 @@ const MyWork = () => {
         <div className='image-modal'>
 
           <div className='modal-content'>
-            <span className='close-btn'
-              onClick={() => setSelectedImg(null)}>
+
+            <span
+              className='close-btn'
+              onClick={() => setSelectedImg(null)}
+            >
               ✖
             </span>
 

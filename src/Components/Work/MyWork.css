@@ -367,3 +367,41 @@
 }
 
 }
+
+.project-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:10px;
+}
+
+.project-card h3{
+  font-size:20px;
+  margin-top:10px;
+}
+
+.project-tech{
+  font-size:14px;
+  color:#bbb;
+}
+
+.project-buttons{
+  display:flex;
+  gap:12px;
+  margin-top:8px;
+}
+
+.project-buttons a{
+  padding:8px 18px;
+  border-radius:25px;
+  background:linear-gradient(135deg,#ff7edb,#7f5cff);
+  color:white;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.project-buttons a:hover{
+  transform:translateY(-2px);
+  box-shadow:0 0 15px rgba(255,126,219,0.7);
+}
