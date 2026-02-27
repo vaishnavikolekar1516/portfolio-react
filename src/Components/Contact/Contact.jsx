@@ -103,7 +103,7 @@ const onSubmit = async (event) => {
 }
 
   return (
-    <div id='contact' className='contact container'>
+    <div id='contact' className='contact'>
 
       <div className="contact-title">
         <h1>Get in touch</h1>

@@ -4,7 +4,7 @@ import profile_img3 from '../../assets/profile_img3.png'
 
 const Hero = () => {
   return (
-    <div id='home' className='hero container'>
+    <div id='home' className='hero'>
       <img src={profile_img3} alt='Profile Img'/>
       <h1 className='hero-title'>
         <span className='hero-name'>I'm Vaishnavi Kolekar,</span>
