@@ -17,14 +17,14 @@ const Hero = () => {
       rel='noopener noreferrer'
       className='hero-connect'
       >
-        Connect with me
+        🌐Connect with me
       </a>
      <a href='/Vaishnavi_Kolekar.pdf' 
      target='_blank' 
      rel='noopener noreferrer' 
      className='hero-resume'
      >
-      My resume
+      📄My resume
       </a>
     </div>
     </div>
