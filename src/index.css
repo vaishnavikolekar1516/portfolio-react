@@ -1,15 +1,3 @@
-/* *{
-  margin: 0;
-  padding: 0;
-}
-body{
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.963);
-  color: white;
-  font-family: 'outfit';
-} */
-
-
 *{
   margin: 0;
   padding: 0;
@@ -22,4 +10,22 @@ body{
   color: #ffffff;
   font-family: 'Outfit', sans-serif;
   overflow-x: hidden;
+}
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+section{
+  width: 100%;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+button{
+  cursor: pointer;
 }

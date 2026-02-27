@@ -165,14 +165,25 @@
     .contact-right label{
         font-size: 20px;
     }
-    .contact-right input{
+    /* .contact-right input{
         width: 100%;
         font-size: 20px;
-    }
-    .contact-right textarea{
+    } */
+
+    .contact-right input{
+    width: 100%;
+    max-width: 600px;
+}
+    /* .contact-right textarea{
         width: 95%;
         font-size: 20px;
-    }
+    } */
+
+    .contact-right textarea{
+    width: 100%;
+    max-width: 573px;
+}
+
     .contact-submit{
         font-size: 20px;
         padding: 15px 40px;
