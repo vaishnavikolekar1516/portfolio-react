@@ -85,10 +85,12 @@
 .about-skills{
   display:flex;
   flex-direction:column;
-  align-items:center;
   gap:20px;
-  margin-top:60px;
-  width:100%;
+  margin-top:10px;
+  width:700px;       /* increase width */
+  max-width:90%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /* SKILL HEADING */
@@ -174,11 +176,10 @@
 
 .about-skill hr{
   border:none;
-  height:8px;
-  border-radius:50px;
+  height:6px;
+  border-radius:6px;
   background:linear-gradient(90deg,#c135ff,#ff7b7b);
-  position:relative;
-  overflow:hidden;
+  width:100%;        /* full width */
 }
 
 /* glow animation */
