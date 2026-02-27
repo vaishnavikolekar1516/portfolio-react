@@ -51,6 +51,7 @@ import theme_pattern from '../../assets/theme_pattern.svg'
 import ToDo from '../../assets/ToDo-app_img.png'
 import Portfolio from '../../assets/img_4.png'
 import LMS from '../../assets/LMS.png'
+import ToDoApp from '../../assets/ToDo-app2.png'
 import LMS_Dashboard from '../../assets/LMS_Dashboard.png'
 
 const MyWork = () => {
@@ -62,22 +63,22 @@ const MyWork = () => {
       img: Portfolio,
       title: "My-Portfolio Website",
       tech: "React • CSS • Responsive",
-      live: "https://portfolio-react-iota-seven-97.vercel.app/",
+      // live: "https://portfolio-react-iota-seven-97.vercel.app/",
       github: "https://github.com/vaishnavikolekar1516/portfolio-react"
     },
     {
-      img: ToDo,
+      img: ToDoApp,
       title: "To Do App",
       tech: "React • LocalStorage",
-      live: "#",
-      github: "#"
+      // live: "#",
+      github: "https://github.com/vaishnavikolekar1516/to-do-app"
     },
     {
       img: LMS,
       title: "LMS System",
       tech: "MERN Stack",
       live: "#",
-      github: "#"
+      github: "https://github.com/vaishnavikolekar1516/LMS"
     },
     // {
     //   img: LMS_Dashboard,
@@ -115,13 +116,13 @@ const MyWork = () => {
 
             <div className="project-buttons">
 
-              <a
+              {/* <a
                 href={project.live}
                 target="_blank"
                 rel="noreferrer"
               >
                 Live Demo
-              </a>
+              </a> */}
 
               <a
                 href={project.github}
