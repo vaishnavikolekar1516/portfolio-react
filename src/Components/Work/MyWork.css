@@ -238,10 +238,10 @@
 /* container */
 
 .work-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  width: 100%;
+  align-items: center;
 }
 
 /* project images */
