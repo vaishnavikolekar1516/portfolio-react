@@ -77,24 +77,7 @@
 
 /* skills */
 
-.about-skills{
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-/* skill card */
-
-.about-skill{
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 14px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: 0.3s ease;
-}
+.about-skills{ display: flex; flex-direction: column; gap: 20px; } .about-skill{ display: flex; gap: 50px; align-items: center; transition: 0.3s; } .about-skill p{ min-width: 150px; font-size: 24px; font-weight: 500; }
 
 .about-skill:hover{
   border-color: #c135ff;
@@ -152,89 +135,6 @@
 
 /* Desktop layout for About section (screens > 768px) */
 /* Desktop layout for About section (screens > 768px) */
-@media(min-width:769px){
-
-  .about-sections {
-    display: flex;
-    gap: 60px;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-  }
-
-  /* Left image */
-  .about-left {
-    flex: 0 0 260px; /* fixed width */
-    display: flex;
-    justify-content: center;
-  }
-
-  .about-left img {
-    width: 260px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 20%;
-    border: 4px solid rgba(197, 58, 155, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .about-left img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(193,53,255,0.4);
-  }
-
-  /* Right section */
-  .about-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 700px;
-  }
-
-  /* Paragraph */
-  .about-para {
-    font-size: 18px;
-    line-height: 32px;
-    color: #e0e0e0;
-  }
-
-  /* Skills centered below paragraph */
-  .about-skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* center skills below paragraph */
-    gap: 30px;
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .about-skill {
-    flex: 0 1 300px; /* width of each skill card */
-    padding: 18px 24px;
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.2);
-    background: rgba(255,255,255,0.05);
-    transition: 0.3s ease;
-  }
-
-  /* Big skill bars */
-  .about-skill hr {
-    height: 10px;
-    border-radius: 10px;
-    background: linear-gradient(90deg,#c135ff,#ff7b7b);
-  }
-
-  .skill-header p {
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  .skill-header span {
-    font-size: 15px;
-    font-weight: 600;
-  }
-}
 /* tablet */
 
 @media(max-width:1024px){
