@@ -168,6 +168,7 @@
   border-radius:6px;
   background:linear-gradient(90deg,#c135ff,#ff7b7b);
   width:100%;
+  align-items: center;
 }
 
 /* ICONS */
