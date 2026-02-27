@@ -152,7 +152,7 @@
     .contact{
         gap: 50px;
         margin: 50px 20px;
-        align-items: start;
+        /* align-items: start; */
     }
 
     .contact-title h1{
