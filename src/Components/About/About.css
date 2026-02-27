@@ -2,135 +2,206 @@
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:60px;
-  margin:80px 120px;
+  gap:50px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  margin: 25px 70px;
 }
 
-/* TOP SECTION */
+/* TITLE */
 
-.about-top{
+.about-title{
+  position:relative;
+}
+
+.about-title h1{
+  font-size:60px;
+  font-weight:700;
+  background: linear-gradient(135deg,#e6c6e6,#eae9ed);
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.about-title img{
+  position:absolute;
+  width:300px;
+  height:90px;
+  bottom:0;
+  right:0;
+  z-index:-1;
+}
+
+/* MAIN SECTION */
+
+.about-sections{
   display:flex;
-  align-items:center;
-  gap:80px;
+  gap:60px;
+  align-items:flex-start;
+  justify-content:center;
+  width:100%;
+  color:white;
+}
+
+/* LEFT IMAGE */
+
+.about-left{
+  flex-shrink:0;
 }
 
 .about-left img{
-  width:280px;
-  border-radius:20px;
+  width:260px;
+  height:320px;
+  object-fit:cover;
+  border-radius:20%;
+  border:4px solid rgba(197,58,155,0.4);
 }
 
+/* RIGHT SECTION */
+
 .about-right{
-  max-width:600px;
+  display:flex;
+  flex-direction:column;
+  gap:35px;
+  max-width:650px;
+}
+
+/* PARAGRAPH */
+
+.about-para{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
   font-size:18px;
-  line-height:1.7;
-  color:#ddd;
+  line-height:30px;
 }
 
 /* SKILLS */
 
-.skills-section{
-  width:70%;
+.about-skills{
   display:flex;
   flex-direction:column;
-  gap:20px;
+  gap:18px;
+  margin-top:10px;
 }
 
-.skills-section h2{
-  text-align:center;
-  font-size:28px;
-}
+/* SKILL CARD */
 
-.skill{
+.about-skill{
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 14px 18px;
   display:flex;
+  flex-direction:column;
+  gap:10px;
+  transition:0.3s ease;
+}
+
+.about-skill:hover{
+  border-color:#c135ff;
+  box-shadow:0 0 12px rgba(193,53,255,0.4);
+  transform:translateY(-4px);
+}
+
+/* SKILL HEADER */
+
+.skill-header{
+  display:flex;
+  justify-content:space-between;
   align-items:center;
-  gap:20px;
 }
 
-.skill p{
-  min-width:160px;
+.skill-header span{
+  font-size:14px;
+  font-weight:600;
+  color:#c135ff;
 }
 
-.skill hr{
-  height:8px;
+/* PROGRESS BAR */
+
+.about-skill hr{
   border:none;
-  border-radius:50px;
-  background:linear-gradient(90deg,#ff00ff,#7b00ff);
+  height:6px;
+  border-radius:6px;
+  background:linear-gradient(90deg,#c135ff,#ff7b7b);
 }
 
 /* ICONS */
 
-.icon{
+.skill-icon{
+  font-size:22px;
   margin-right:8px;
-  font-size:20px;
 }
 
-.html{color:#e34f26}
-.js{color:#f7df1e}
-.react{color:#61dafb}
-.node{color:#68a063}
-.mongo{color:#4db33d}
-.express{color:white}
+.skill-icon.html{color:#e34f26}
+.skill-icon.js{color:#f7df1e}
+.skill-icon.react{color:#61dafb}
+.skill-icon.node{color:#68a063}
+.skill-icon.mongo{color:#4db33d}
+.skill-icon.express{color:white}
 
-/* tablet */
+/* TABLET */
 
 @media(max-width:1024px){
 
 .about{
-  margin: 25px 40px;
+  margin:25px 40px;
 }
 
 .about-sections{
-  flex-direction: column;
-  text-align: center;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
 }
 
 .about-left img{
-  width: 200px;
-  height: 300px;
+  width:200px;
+  height:300px;
 }
 
 }
 
-/* mobile */
+/* MOBILE */
 
 @media(max-width:768px){
 
 .about{
-  margin: 20px;
-  padding: 35px 20px;
+  margin:20px;
+  padding:35px 20px;
 }
 
 .about-title h1{
-  font-size: 40px;
+  font-size:40px;
 }
 
 .about-title img{
-  width: 200px;
-  height: 60px;
+  width:200px;
+  height:60px;
 }
 
 .about-para{
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.skill-header p{
-  font-size: 14px;
+  font-size:16px;
+  line-height:26px;
 }
 
 }
 
-/* small phones */
+/* SMALL PHONES */
 
 @media(max-width:480px){
 
 .about-title h1{
-  font-size: 32px;
+  font-size:32px;
 }
 
 .about-left img{
-  width: 180px;
-  height: 260px;
+  width:180px;
+  height:260px;
 }
 
 }
