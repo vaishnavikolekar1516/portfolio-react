@@ -87,7 +87,7 @@
   flex-direction:column;
   align-items:center;
   gap:20px;
-  margin-top:10px;
+  margin-top:60px;
   width:100%;
 }
 
@@ -139,13 +139,18 @@
 .skill-header p{
   display:flex;
   align-items:center;
-  gap:8px;
+  gap:10px;
   transition:0.3s;
 }
 
 .about-skill:hover .skill-header p{
   color:#ff7bff;
   text-shadow:0 0 8px rgba(255,123,255,0.8);
+}
+
+.skill-header p:hover{
+  color:#c135ff;
+  transform:translateX(5px);
 }
 
 /* PERCENTAGE */
@@ -158,13 +163,44 @@
 
 /* PROGRESS BAR */
 
-.about-skill hr{
+/* .about-skill hr{
   border:none;
   width: 550x;
   height:6px;
   border-radius:6px;
   background:linear-gradient(90deg,#c135ff,#ff7b7b);
   margin:auto;
+} */
+
+.about-skill hr{
+  border:none;
+  height:8px;
+  border-radius:50px;
+  background:linear-gradient(90deg,#c135ff,#ff7b7b);
+  position:relative;
+  overflow:hidden;
+}
+
+/* glow animation */
+.about-skill hr::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-50%;
+  width:50%;
+  height:100%;
+  background:rgba(255,255,255,0.4);
+  filter:blur(8px);
+  animation:skillGlow 3s infinite linear;
+}
+
+@keyframes skillGlow{
+  0%{
+    left:-50%;
+  }
+  100%{
+    left:120%;
+  }
 }
 
 /* ICONS */
