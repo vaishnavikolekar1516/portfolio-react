@@ -127,20 +127,13 @@ const About = () => {
         <div className="about-right">
 
           <div className="about-para">
-            <p>
-            I’m a MERN Stack Developer with a passion for creating modern,
-            responsive, and user-friendly web applications.
-            </p>
+             <p>I’m a MERN Stack Developer with a passion for creating modern, responsive, and user-friendly web applications. I specialize in MongoDB, Express.js, React, and Node.js, building full-stack solutions that are scalable, efficient, and visually appealing.</p>
 
-            <p>
-            I love turning ideas into real products—from designing intuitive
-            interfaces to implementing robust backend systems.
-            </p>
+            <p>I love turning ideas into real products—from designing intuitive interfaces to implementing robust backend systems. Writing clean, maintainable code, optimizing performance, and ensuring smooth user experiences are at the core of everything I build.</p>
 
-            <p>
-            I enjoy learning new technologies and building full-stack
-            applications that solve real-world problems.
-            </p>
+            <p>I enjoy learning new technologies, experimenting with innovative tools, and staying updated with the latest trends in web development. Over the years, I’ve worked on projects ranging from personal portfolio websites to full-fledged web applications, always aiming to solve real-world problems and create meaningful digital experiences. 💻</p>
+
+            <p>🚀 I am keen on opportunities where I can learn, collaborate, and contribute to impactful projects in full-stack web development.</p>
           </div>
 
         </div>
