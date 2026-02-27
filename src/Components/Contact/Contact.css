@@ -12,9 +12,21 @@
 }
 
 .contact-title h1{
-    font-size: 70px;
-    font-weight: 600;
-    padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 700;
+  background: linear-gradient(135deg,#e6c6e6,#eae9ed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-title img{
+  position: absolute;
+  width: 300px;
+  height: 90px;
+  bottom: 0;
+  right: -40px;
+  z-index: -1;
 }
 
 .contact-section{
