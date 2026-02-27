@@ -7,7 +7,7 @@ import { SiMongodb, SiExpress } from "react-icons/si";
 
 const About = () => {
   return (
-    <div id='about' className='about'>
+    <div id='about' className='about container'>
 
       <div className="about-title">
         <h1>About me</h1>
