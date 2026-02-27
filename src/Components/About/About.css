@@ -204,6 +204,12 @@
   font-size: 14px;
 }
 
+.about-left img{
+  width: 180px;
+  height: 260px;
+  align-items: center;
+}
+
 }
 
 /* small phones */
