@@ -158,22 +158,15 @@
 
 /* PROGRESS BAR */
 
-/* .about-skill hr{
+.about-skill hr{
   border:none;
+  width: 400x;
   height:6px;
   border-radius:6px;
   background:linear-gradient(90deg,#c135ff,#ff7b7b);
   margin:auto;
-} */
-
-.about-skill hr{
-  outline: none;
-  border: none;
-  width: 350px;   /* increase this */
-  height: 8px;
-  border-radius: 50px;
-  background: linear-gradient(264deg,#DF8908 -5.09%, #B415FF 106.28%);
 }
+
 /* ICONS */
 
 .skill-icon{
