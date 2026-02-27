@@ -63,7 +63,7 @@ const MyWork = () => {
       title: "Portfolio Website",
       tech: "React • CSS • Responsive",
       live: "https://portfolio-react-iota-seven-97.vercel.app/",
-      github: "https://github.com/YOUR_GITHUB_LINK"
+      github: "https://github.com/vaishnavikolekar1516/portfolio-react"
     },
     {
       img: ToDo,
@@ -79,13 +79,13 @@ const MyWork = () => {
       live: "#",
       github: "#"
     },
-    {
-      img: LMS_Dashboard,
-      title: "LMS Dashboard",
-      tech: "React • Dashboard UI",
-      live: "#",
-      github: "#"
-    }
+    // {
+    //   img: LMS_Dashboard,
+    //   title: "LMS Dashboard",
+    //   tech: "React • Dashboard UI",
+    //   live: "#",
+    //   github: "#"
+    // }
   ]
 
   return (
